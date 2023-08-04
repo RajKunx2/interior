@@ -1,104 +1,119 @@
 .heading {
-    font-family: 'Poppins', 'kanit', 'Molengo';
+  font-family: "Poppins", "kanit", "Molengo";
 }
 
 h2 {
-    font-family: 'Poppins', 'kanit', 'Molengo';
+  font-family: "Poppins", "kanit", "Molengo";
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 #heading {
-    font-family: 'Arvo', serif;
+  font-family: "Arvo", serif;
 }
 
 .brand__logo {
-    mix-blend-mode: hard-light;
-    border-radius: 30%;
-
-}
-
-.nav__link:active::after {
-    background-color: red;
+  mix-blend-mode: hard-light;
+  border-radius: 30%;
 }
 
 .nav__link::after {
-    content: "";
-    height: 4px;
-    width: 100%;
-    display: block;
-    background-color: #141213;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: all 0.2s;
+  content: "";
+  height: 4px;
+  width: 100%;
+  display: block;
+  background-color: #141213;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.2s;
 }
 
 .nav__link:hover::after {
-    transform: scaleX(1);
+  transform: scaleX(1);
+}
+.nav__links::after {
+  content: "";
+  height: 4px;
+  width: 100%;
+  display: block;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.2s;
 }
 
+.nav__links:hover::after {
+  transform: scaleX(1);
+}
 
 .hero__btn {
-    background-image: linear-gradient(120deg, #141213 50%, #C2A03D 50%);
-    background-size: 230%;
-    transition: all 0.4s;
+  background-image: linear-gradient(120deg, #c2a03d 50%, #141213 50%);
+  background-size: 230%;
+  transition: all 0.4s;
 }
 
 .hero__btn:hover {
-    background-position: 100%;
-    transform: translateX(1rem);
-    color: black;
-    font-weight: 900;
-
+  background-position: 100%;
+  transform: translateX(1rem);
+  color: rgb(255, 255, 255);
+  font-weight: 900;
 }
-
 .hero__btn:active {
-    transform: translateY(-0.15rem) translateX(1rem);
-
+  transform: translateY(-0.15rem) translateX(1rem);
 }
 
 .exp__btn {
-    transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .exp__btn:hover {
-    background-color: #1d1b1c;
-    color: white;
-    transform: scale(1.05);
+  background-color: #1d1b1c;
+  color: white;
+  transform: scale(1.05);
 }
 
-
 ::-webkit-scrollbar {
-    width: 10px;
-
+  background: #000000;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    padding: 2px;
+  padding: 2px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #b9952a;
-    border-radius: 10px;
+  background: #c2a03d;
+  border-radius: 10px;
+}
+.item {
+  transform: scale(1);
+
+  transition: all 0.2s;
+}
+.itemb {
+  filter: blur(0px);
 }
 
-/* #about {
-    background-image: url("../images/about.jpg");
-    object-fit: cover;
-} */
-
-#heroabout {
-    background-image: url("../images/bg1.jpg");
-    background-size: cover;
-    background-position: center;
+.item:hover {
+  transform: scale(0.95);
 }
 
 #about {
-    background-image: url("../images/bg2.jpg");
-    background-size: cover;
-    background-position: center;
+  background-image: url("../images/about.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%; /* Set the height of the div to 100% */
+}
+#heroabout {
+  background-image: url("../images/bga1.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-
+#about {
+  background-image: url("../images/bga2.jpg");
+  background-size: cover;
+  background-position: center;
+}

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Srijan Nivas</title>
+    <link rel="icon" href="images/favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital@0;1&family=Molengo&family=Poppins:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/656c3d1eb6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-1N5QVNS0MH"
+    ></script>
+    <script src="gtag.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+      async
+      defer
+    ></script>
+    <script>
+      function initMap() {
+        const location = { lat: YOUR_LATITUDE, lng: YOUR_LONGITUDE };
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 15,
+          center: location,
+        });
+
+        const marker = new google.maps.Marker({
+          position: location,
+          map: map,
+          title: "Srijan Nivas", // Set the title of the marker
+        });
+      }
+    </script>
+    <style>
+      /* Custom styles can be added here */
+      /* For example: */
+
+      /* Increase font size and add some spacing for section headings */
+      h1 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      /* Add padding to paragraphs */
+      p {
+        padding: 0.5rem 0;
+      }
+
+      /* Adjust the height of the header image */
+      .header-image {
+        height: 60vh;
+      }
+
+      /* Add space between navigation links */
+      .nav-links a {
+        margin-right: 1rem;
+      }
+      ::-webkit-scrollbar {
+        background: #000000;
+        width: 10px;
+      }
+
+      ::-webkit-scrollbar-track {
+        padding: 2px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #e41c3d;
+        border-radius: 10px;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="relative flex justify-between items-center bg-transparent">
+      <a class="text-3xl font-bold leading-none" href="#">
+        <!-- SOFA ICON -->
+        <svg class="h-4" alt="logo" viewBox="0 0 10240 10240">
+          <img
+            class="brand__logoss ml-1 lg:ml-5 h-16 w-20 2xl:w-24 2xl:h-20 -mt-3 p-2 mix-blend-normal rounded-xl"
+            src="images/logo opion 1.jpg"
+            alt="Logo"
+          />
+        </svg>
+      </a>
+      <div class="lg:hidden">
+        <!-- burger icon -->
+        <button class="navbar-burger flex items-center text-gray-600 p-3 -ml-6">
+          <svg
+            class="block w-5 mt-2 fill-current"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Mobile menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </button>
+      </div>
+      <!-- LARGER VIEW -->
+      <ul
+        class="hidden w-screen text-lg absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 justify-center align-middle lg:flex lg:justify-end lg:w-auto lg:space-x-6 font-extrabold"
+      >
+        <li>
+          <a class="text-[#ffffff] font-bold nav__links" href="index.html"
+            >Home</a
+          >
+        </li>
+
+        <li>
+          <a class="text-[#ffffff] font-bold nav__links" href="about.html"
+            >About Us</a
+          >
+        </li>
+        <!-- Add Alpine.js -->
+        <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js"></script>
+
+        <li>
+          <a class="text-[#ffffff] font-bold nav__links" href="service.html"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a class="text-[#ffffff] font-bold nav__links" href="gallery.html"
+            >Recent Project</a
+          >
+        </li>
+        <li>
+          <a class="text-[#ffffff] font-bold nav__links" href="contactUs.html"
+            >Blog</a
+          >
+        </li>
+        <li>
+          <a class="text-[#ffffff] font-bold nav__links" href="contactUs.html"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="navbar-menu relative z-50 hidden">
+      <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+      <nav
+        class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
+      >
+        <div class="flex items-center mb-8">
+          <a class="mr-auto h-16 w-20 text-xl font-bold leading-none" href="#">
+            <img class="sofa" src="images/logo.png" alt="Logo" class="" />
+          </a>
+          <button class="navbar-close">
+            <svg
+              class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <ul>
+            <!-- Column Navbar -->
+            <li class="mb-1 font-extrabold">
+              <a
+                class="block p-4 text-sm font-semibold text-gray-800 hover:bg-blue-50 hover:text-blue-600 rounded"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="mb-1 font-extrabold">
+              <a
+                class="block p-4 text-sm font-semibold text-gray-800 hover:bg-blue-50 hover:text-blue-600 rounded"
+                href="about.html"
+                >About</a
+              >
+            </li>
+            <li class="mb-1 font-extrabold">
+              <a
+                class="block p-4 text-sm font-semibold text-gray-800 hover:bg-blue-50 hover:text-blue-600 rounded"
+                href="service.html"
+                >Services</a
+              >
+            </li>
+            <!-- component -->
+            <!-- This is an example component -->
+            <!-- <div class="">
+                <div
+                  x-data="{ open: false }"
+                  @mouseenter="open = true"
+                  @mouseleave="open = false"
+                  class="flex"
+                >
+                  <button
+                    class="block p-4 text-sm font-semibold text-gray-800 hover:bg-blue-50 hover:text-blue-600 rounded"
+                    type="button"
+                    @click="open = !open"
+                  >
+                    Services -->
+            <!-- <svg class="w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg> -->
+            <!-- </button> -->
+            <!-- <svg
+                    class="w-4 mx-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg> -->
+            <!-- Dropdown menu -->
+            <!-- <div
+                    x-show="open"
+                    x-transition:enter="transition ease-out duration-100"
+                    x-transition:enter-start="transform opacity-0 scale-95"
+                    x-transition:enter-end="transform opacity-100 scale-100"
+                    x-transition:leave="transition ease-in duration-75"
+                    x-transition:leave-start="transform opacity-100 scale-100"
+                    x-transition:leave-end="transform opacity-0 scale-95"
+                    class="absolute bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-8"
+                    style="display: none"
+                  >
+                    <ul class="py-1" aria-labelledby="dropdown">
+                      <li>
+                        <a
+                          href="service.html"
+                          class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+                          >Turnkey Projects</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="service.html"
+                          class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+                          >Construction</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="service.html"
+                          class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+                          >Consultancy</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="service.html"
+                          class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+                          >Home Decor</a
+                        >
+                      </li>
+                    </ul>
+                  </div> -->
+            <!-- </div>
+              </div> -->
+
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold text-gray-800 hover:bg-blue-50 hover:text-blue-600 rounded"
+                href="gallery.html"
+                >Recent Project</a
+              >
+            </li>
+            <a
+              class="block p-4 text-sm font-semibold text-gray-800 hover:bg-blue-50 hover:text-blue-600 rounded"
+              href="gallery.html"
+              >Blog</a
+            >
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold text-gray-800 hover:bg-blue-50 hover:text-blue-600 rounded"
+                href="contactUs.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <script>
+      // Burger menus
+      document.addEventListener("DOMContentLoaded", function () {
+        // open
+        const burger = document.querySelectorAll(".navbar-burger");
+        const menu = document.querySelectorAll(".navbar-menu");
+
+        if (burger.length && menu.length) {
+          for (var i = 0; i < burger.length; i++) {
+            burger[i].addEventListener("click", function () {
+              for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle("hidden");
+              }
+            });
+          }
+        }
+
+        // close
+        const close = document.querySelectorAll(".navbar-close");
+        const backdrop = document.querySelectorAll(".navbar-backdrop");
+
+        if (close.length) {
+          for (var i = 0; i < close.length; i++) {
+            close[i].addEventListener("click", function () {
+              for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle("hidden");
+              }
+            });
+          }
+        }
+
+        if (backdrop.length) {
+          for (var i = 0; i < backdrop.length; i++) {
+            backdrop[i].addEventListener("click", function () {
+              for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle("hidden");
+              }
+            });
+          }
+        }
+      });
+    </script>
+    <main>
+      <section class="text-center md:-mt-[7rem] -mt-[6rem] bg-black">
+        <div
+          class="flex items-center justify-center header-image md:h-[109vh] h-[105vh]"
+          style="
+            background-image: url(./images/bg1.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+          "
+        >
+          <div class="text-center">
+            <h1
+              class="md:text-7xl text-4xl font-bold tracking-wide text-white font-sans my-4"
+            >
+              Our Services
+            </h1>
+          </div>
+        </div>
+        <div
+          class=""
+          style="
+            background-image: url(./images/redblack.jpg);
+            padding: 5px 0;
+            background-attachment: fixed;
+          "
+        >
+          <div
+            style="background-image: url(./images/redblack.jpg)"
+            class="bg-cover bg-center bg-no-repeat md:p-12 bg-fixed pb-12 md:pb-0 bg-black"
+            id="turkey"
+          >
+            <div class="flex-row md:flex-row-reverse md:flex">
+              <div class="w-full md:w-1/2">
+                <img
+                  src="./images/tp.jpg"
+                  class="object-cover mx-auto h-[30rem] md:h-[50rem] rounded-lg"
+                />
+              </div>
+              <div
+                class="w-full md:w-1/2 px-4 h-fit justify-center align-middle m-auto py-6 md:py-0"
+              >
+                <h1
+                  class="text-center md:text-5xl text-3xl text-white font-poppins font-semibold mb-4"
+                >
+                  Turkey Porject
+                </h1>
+                <div class="flex justify-center object-contain align-middle">
+                  <div class="border-b-[3px] border-b-indigo-900 w-1/2"></div>
+                </div>
+                <p class="text-base md:text-lg px-2 text-white">
+                  Design and planning of the interior space. Selection and
+                  procurement of materials, fixtures, and furniture.
+                  Construction, installation, and coordination of all necessary
+                  tasks. Project management, including permits, inspections, and
+                  compliance. Furniture and equipment selection, procurement,
+                  and installation. Adding finishing touches and styling
+                  elements Quality assurance and testing. Handover of the
+                  completed space and post-project support
+                </p>
+              </div>
+              <!-- <img
+              src="./images/image1.jpg"
+              class="w-fit h-auto object-cover m-auto"
+            /> -->
+            </div>
+          </div>
+          <div
+            style="background-image: url('./images/redblack.jpg')"
+            class="bg-cover bg-center bg-no-repeat md:p-12 bg-fixed lg:-mt-2 pb-12 lg:pb-0 bg-black"
+            id="construction"
+          >
+            <div class="flex-row md:flex">
+              <div class="w-full md:w-1/2">
+                <img
+                  src="./images/bc.jpg"
+                  class="object-cover mx-auto h-[30rem] md:h-[50rem] rounded-lg"
+                />
+              </div>
+              <div
+                class="w-full md:w-1/2 px-4 h-fit justify-center align-middle m-auto"
+              >
+                <h1
+                  class="text-center md:text-5xl text-3xl text-white font-poppins font-semibold mb-4"
+                >
+                  Building construction
+                </h1>
+                <div class="flex justify-center object-contain align-middle">
+                  <div class="border-b-[3px] border-b-indigo-900 w-1/2"></div>
+                </div>
+                <p class="text-base md:text-lg px-2 text-white">
+                  Site preparation and clearing. Architectural design and
+                  structural engineering. Obtaining permits and approvals.
+                  Procuring building materials. Construction execution,
+                  including foundation, framing, and finishing work. Project
+                  management and coordination. Quality control and inspections.
+                  Implementing safety measures. Testing and commissioning of
+                  systems. Handover of the completed building and
+                  post-construction support.
+                </p>
+              </div>
+              <!-- <img
+              src="./images/image1.jpg"
+              class="w-fit h-auto object-cover m-auto"
+            /> -->
+            </div>
+          </div>
+          <div
+            style="
+              background-image: url('./images/redblack.jpg');
+              height: fit-content;
+            "
+            class="bg-cover bg-center bg-no-repeat md:p-12 bg-fixed lg:-mt-2 pb-12 md:pb-0 bg-black"
+            id="consultancy"
+          >
+            <div class="flex-row-reverse md:flex">
+              <div class="w-full md:w-1/2">
+                <img
+                  src="./images/cons.jpg"
+                  class="object-cover mx-auto h-[30rem] md:h-[50rem] rounded-lg"
+                />
+              </div>
+              <div
+                class="w-full md:w-1/2 px-4 h-fit justify-center align-middle m-auto"
+              >
+                <h1
+                  class="text-center md:text-5xl text-3xl text-white font-poppins font-semibold mb-4"
+                >
+                  Consultancy
+                </h1>
+                <div class="flex justify-center object-contain align-middle">
+                  <div class="border-b-[3px] border-b-indigo-900 w-1/2"></div>
+                </div>
+                <p class="text-lg md:text-lg px-2 text-white">
+                  Needs assessment and understanding client requirements. Space
+                  planning and layout optimization. Development of design
+                  concepts and themes. Selection of furniture, fixtures, and
+                  fittings. Assistance with material and finishes selection.
+                  Lighting design and coordination. Color consultation and
+                  coordination. Budgeting and cost estimation. Styling and
+                  accessorizing. Post-project evaluation and guidance.
+                </p>
+              </div>
+              <!-- <img
+              src="./images/image1.jpg"
+              class="w-fit h-auto object-cover m-auto"
+            /> -->
+            </div>
+          </div>
+          <div
+            style="
+              background-image: url('./images/redblack.jpg');
+              height: fit-content;
+            "
+            class="bg-cover bg-center bg-no-repeat md:p-12 bg-fixed lg:-mt-2 pb-12 md:pb-0 bg-black"
+            id="home"
+          >
+            <div class="flex-row md:flex">
+              <div class="w-full md:w-1/2">
+                <img
+                  src="./images/home.jpg"
+                  class="object-cover mx-auto h-[30rem] md:h-[50rem] rounded-lg"
+                />
+              </div>
+              <div
+                class="w-full md:w-1/2 px-4 h-fit justify-center align-middle m-auto"
+              >
+                <h1
+                  class="text-center md:text-5xl text-3xl text-white font-poppins font-semibold mb-4"
+                >
+                  Home Decor
+                </h1>
+                <div class="flex justify-center object-contain align-middle">
+                  <div class="border-b-[3px] border-b-indigo-900 w-1/2"></div>
+                </div>
+                <p class="text-lg md:text-lg px-2 text-white">
+                  Selecting a suitable color scheme. Arranging furniture.
+                  Coordinating textiles and upholstery. Adding wall decor and
+                  artwork. Incorporating decorative accessories and objects.
+                  Choosing window treatments. Selecting floor coverings. Adding
+                  personal and sentimental items. Considering seasonal decor.
+                  Incorporating sustainable and eco-friendly design elements.
+                </p>
+              </div>
+              <!-- <img
+              src="./images/image1.jpg"
+              class="w-fit h-auto object-cover m-auto"
+            /> -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
