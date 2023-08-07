@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <nav class="relative flex justify-between items-center bg-transparent z-10">
+        <a class="text-3xl font-bold leading-none" href="#">
+          <!-- SOFA ICON -->
+          <svg class="h-4" alt="logo" viewBox="0 0 10240 10240">
+            <img
+              class="brand__logoss ml-1 lg:ml-5 h-16 w-20 2xl:w-24 2xl:h-20 -mt-3 p-2 mix-blend-normal rounded-xl"
+              src="images/logo opion 1.jpg"
+              alt="Logo"
+            />
+          </svg>
+        </a>
+        <div class="lg:hidden">
+          <!-- burger icon -->
+          <button class="navbar-burger flex items-center text-gray-600 p-3 -ml-6">
+            <svg
+              class="block w-5 mt-2 fill-current"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Mobile menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </button>
+        </div>
+        <!-- LARGER VIEW -->
+        <ul
+          class="hidden w-screen text-lg absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 justify-center align-middle lg:flex lg:justify-end lg:w-auto lg:space-x-6 font-extrabold"
+        >
+          <li>
+            <a class="text-[#ffffff] font-bold nav__links" href="index.html"
+              >Home</a
+            >
+          </li>
+          
+          <li>
+            <a class="text-[#ffffff] font-bold nav__links" href="#">About Us</a>
+          </li>
+          <!-- Add Alpine.js -->
+          <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js"></script>
+  
+          
+  
+          <li>
+            <a class="text-[#ffffff] font-bold nav__links" href="service.html"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a class="text-[#ffffff] font-bold nav__links" href="gallery.html"
+              >Recent Project</a
+            >
+          </li>
+          <li>
+            <a class="text-[#ffffff] font-bold nav__links" href="contactUs.html"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a class="text-[#ffffff] font-bold nav__links" href="contactUs.html"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+  
+      <div class="navbar-menu relative z-50 hidden">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav
+          class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
+        >
+          <div class="flex items-center mb-8">
+            <a class="mr-auto h-16 w-20 text-xl font-bold leading-none" href="#">
+              <img class="sofa" src="images/logo.png" alt="Logo" class="" />
+            </a>
+            <button class="navbar-close">
+              <svg
+                class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div>
+            <ul>
+              <!-- Column Navbar -->
+              <li class="mb-1 font-extrabold">
+                <a
+                  class="block p-4 text-sm font-semibold text-gray-800 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-1 font-extrabold">
+                <a
+                  class="block p-4 text-sm font-semibold text-gray-800 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  href="about.html"
+                  >About</a
+                >
+              </li>
+              <li class="mb-1 font-extrabold">
+                <a
+                  class="block p-4 text-sm font-semibold text-gray-800 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  href="service.html"
+                  >Services</a
+                >
+              </li>
+              <!-- component -->
+              <!-- This is an example component -->
+              <!-- <div class="">
+                <div
+                  x-data="{ open: false }"
+                  @mouseenter="open = true"
+                  @mouseleave="open = false"
+                  class="flex"
+                >
+                  <button
+                    class="block p-4 text-sm font-semibold text-gray-800 hover:bg-blue-50 hover:text-blue-600 rounded"
+                    type="button"
+                    @click="open = !open"
+                  >
+                    Services -->
+                    <!-- <svg class="w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg> -->
+                  <!-- </button> -->
+                  <!-- <svg
+                    class="w-4 mx-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg> -->
+                  <!-- Dropdown menu -->
+                  <!-- <div
+                    x-show="open"
+                    x-transition:enter="transition ease-out duration-100"
+                    x-transition:enter-start="transform opacity-0 scale-95"
+                    x-transition:enter-end="transform opacity-100 scale-100"
+                    x-transition:leave="transition ease-in duration-75"
+                    x-transition:leave-start="transform opacity-100 scale-100"
+                    x-transition:leave-end="transform opacity-0 scale-95"
+                    class="absolute bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-8"
+                    style="display: none"
+                  >
+                    <ul class="py-1" aria-labelledby="dropdown">
+                      <li>
+                        <a
+                          href="service.html"
+                          class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+                          >Turnkey Projects</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="service.html"
+                          class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+                          >Construction</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="service.html"
+                          class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+                          >Consultancy</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="service.html"
+                          class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+                          >Home Decor</a
+                        >
+                      </li>
+                    </ul>
+                  </div> -->
+                <!-- </div>
+              </div> -->
+  
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-gray-800 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  href="gallery.html"
+                  >Recent Project</a
+                >
+              </li>
+              <a
+                class="block p-4 text-sm font-semibold text-gray-800 hover:bg-blue-50 hover:text-blue-600 rounded"
+                href="gallery.html"
+                >Blog</a
+              >
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-gray-800 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  href="contactUs.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+  
+      <script>
+        // Burger menus
+        document.addEventListener("DOMContentLoaded", function () {
+          // open
+          const burger = document.querySelectorAll(".navbar-burger");
+          const menu = document.querySelectorAll(".navbar-menu");
+  
+          if (burger.length && menu.length) {
+            for (var i = 0; i < burger.length; i++) {
+              burger[i].addEventListener("click", function () {
+                for (var j = 0; j < menu.length; j++) {
+                  menu[j].classList.toggle("hidden");
+                }
+              });
+            }
+          }
+  
+          // close
+          const close = document.querySelectorAll(".navbar-close");
+          const backdrop = document.querySelectorAll(".navbar-backdrop");
+  
+          if (close.length) {
+            for (var i = 0; i < close.length; i++) {
+              close[i].addEventListener("click", function () {
+                for (var j = 0; j < menu.length; j++) {
+                  menu[j].classList.toggle("hidden");
+                }
+              });
+            }
+          }
+  
+          if (backdrop.length) {
+            for (var i = 0; i < backdrop.length; i++) {
+              backdrop[i].addEventListener("click", function () {
+                for (var j = 0; j < menu.length; j++) {
+                  menu[j].classList.toggle("hidden");
+                }
+              });
+            }
+          }
+        });
+      </script>
+
+<div class="mx-auto w-full px-auto h-auto bg-black md:-mt-[7rem] -mt-[6rem]">
+    <div
+      class="w-full md:mx-auto flex flex-col justify-center items-center lg:h-[105vh] h-[105vh] md:h-[40vh] py-auto bg-fixed" id="heroabout">
+      <h2 class="font-sans font-bold text-white text-center">
+        <span class="relative inline-block md:text-8xl my-2 text-4xl font-serif">
+          About Us
+        </span>
+      </h2>
+      <p class="md:text-2xl text-gray-200 text-lg my-2 font-sans text-center">
+        Transforming Houses into Homes
+      </p>
+    </div>
+
+    <div class="flex flex-wrap justify-start w-auto lg:px-24 overflow-hidden pr-3 md:pr-0 px-4 bg-fixed" id="about">
+      <div class="flex md:flex-row flex-col h-auto justify-center w-full align-middle my-16">
+        <!-- <div class="flex flex-col items-center">
+          <div
+            class="font-semibold md:-rotate-90 rounded-lg lg:rounded-sm text-xl md:text-2xl my-auto text-center bg-[#C2A03D] px-2 py-4 h-auto text-[#4f4015] w-[180px]">
+            Extraordinary Homes</div>
+        </div> -->
+        <div class="bg-slate-700/30 shadow-white shadow-md text-base md:text-xl px-8 py-6 text-white h-auto rounded-lg md:rounded-none">
+          Welcome to Srijan Nivaas - where we believe in creating the extraordinary and transforming houses into homes
+          that reflect your unique personality and style. Our interior designing company is driven by the passion to
+          enhance your living space, making it not just visually stunning but also a place of comfort and tranquility.
+        </div>
+      </div>
+      <div class="flex md:flex-row flex-col h-auto justify-center w-full align-middle my-16">
+        <!-- <div class="flex flex-col items-center">
+          <div
+            class="font-semibold md:-rotate-90 rounded-lg lg:rounded-sm text-xl md:text-2xl my-auto text-center bg-[#C2A03D] px-2 py-4 h-auto text-[#4f4015] w-[180px]">
+            Passionate Designers</div>
+        </div> -->
+        <div class="bg-slate-700/30 shadow-white shadow-md text-base md:text-xl px-8 py-6 h-auto text-white rounded-lg md:rounded-none">
+          At Srijan Nivaas, we understand that your home is more than just a place; it's where memories are made, dreams
+          are nurtured, and life unfolds. Our expert team of designers and decorators is committed to providing
+          top-notch quality work, ensuring that every inch of your space is utilized optimally and thoughtfully,
+          blending functionality with extraordinary design.
+        </div>
+      </div>
+      <div class="flex md:flex-row flex-col h-auto justify-center w-full align-middle my-16">
+        <!-- <div class="flex flex-col items-center">
+          <div
+            class="font-semibold md:-rotate-90 rounded-lg lg:rounded-sm text-xl md:text-2xl my-auto text-center bg-[#C2A03D] px-2 py-4 text-[#4f4015] w-[180px]">
+            Exceeding
+            Expectations</div>
+        </div> -->
+        <div class="bg-slate-700/30 shadow-white shadow-md text-base md:text-xl px-8 py-6 h-auto text-white rounded-lg md:rounded-none">
+          What sets us apart is our dedication to meeting and exceeding customer expectations in every aspect. We take
+          pride in our ability to create designs that perfectly align with your vision and preferences, while also being
+          mindful of your budget. Your satisfaction is our ultimate goal, and we go the extra mile to ensure that the
+          end result not only meets but surpasses your expectations.
+        </div>
+      </div>
+      <div class="flex md:flex-row flex-col h-auto justify-center w-full align-middle my-16">
+        <!-- <div class="flex flex-col items-center">
+          <div
+            class="font-semibold md:-rotate-90 rounded-lg lg:rounded-sm text-xl md:text-2xl my-auto text-center bg-[#C2A03D] px-2 py-4 h-auto text-[#4f4015] w-[180px]">
+            Personalized Touch</div>
+        </div> -->
+        <div class="bg-slate-700/30 shadow-white shadow-md text-base md:text-xl px-8 py-6 h-auto text-white rounded-lg md:rounded-none">
+          Through our meticulous attention to detail and careful selection of elements, we strive to infuse your living
+          space with elements that truly represent your style and personality. Whether it's a contemporary, minimalistic
+          approach or a more classic and cozy ambiance, our team is well-equipped to cater to a diverse range of design
+          preferences.
+        </div>
+      </div>
+      <div class="flex md:flex-row flex-col h-auto justify-center w-full align-middle my-16">
+        <!-- <div class="flex flex-col items-center">
+          <div
+            class="font-semibold md:-rotate-90 rounded-lg lg:rounded-sm text-xl md:text-2xl my-auto text-center bg-[#C2A03D] px-2 py-4 h-auto text-[#4f4015] w-[180px]">
+            Harmonious Spaces</div>
+        </div> -->
+        <div class="bg-slate-700/30 shadow-white shadow-md text-base md:text-xl px-8 py-6 h-auto text-white rounded-lg md:rounded-none">
+          With Srijan Nivaas, your home will become a sanctuary that offers a seamless blend of aesthetics and
+          functionality. We understand the power of colors, textures, and patterns, and how they can influence emotions
+          and moods, and we use this knowledge to curate spaces that provide a sense of harmony and peace.
+        </div>
+      </div>
+      <div class="flex md:flex-row flex-col h-auto justify-center w-full align-middle my-16">
+        <!-- <div class="flex flex-col items-center">
+          <div
+            class="font-semibold md:-rotate-90 rounded-lg lg:rounded-sm text-xl md:text-2xl my-auto text-center bg-[#C2A03D] text-[#4f4015] px-2 py-4 h-auto w-[180px]">
+            Creative Vision</div>
+        </div> -->
+        <div class="bg-slate-700/30 shadow-white shadow-md text-base md:text-xl px-8 py-6 h-auto text-white rounded-lg md:rounded-none">
+          In every project we undertake, we approach it with enthusiasm, creativity, and a deep understanding of the
+          latest trends and innovations in interior design. This allows us to breathe life into your living spaces,
+          making them truly remarkable and reflective of your distinctive identity.
+        </div>
+      </div>
+      <div class="flex md:flex-row flex-col h-auto justify-center w-full align-middle my-16">
+        <!-- <div class="flex flex-col items-center">
+          <div
+            class="font-semibold md:-rotate-90 rounded-lg lg:rounded-sm text-xl md:text-2xl my-auto text-center bg-[#C2A03D] text-[#4f4015] px-2 py-4 h-auto w-[180px]">
+            Dream Home</div>
+        </div> -->
+        <div class="bg-slate-700/30 shadow-white shadow-md text-base md:text-xl px-8 py-6 h-auto text-white rounded-lg md:rounded-none">
+          So, whether you're looking to revamp your existing home or create an entirely new space, Srijan Nivaas is here
+          to turn your dreams into reality. Join us in this journey of transformation and experience the joy of living
+          in a space that's truly a reflection of you. Let us work together to make your home a beautiful and soulful
+          abode that you'll cherish for years to come.
+        </div>
+      </div>
+    </div>
+
+    
+</body>
+
+</html>
