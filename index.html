@@ -57,6 +57,16 @@
     #map {
       height: 100%;
     }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .item:hover .overlay {
+      opacity: 1;
+    }
   </style>
 </head>
 
@@ -128,8 +138,8 @@
     <a class="text-3xl font-bold leading-none" href="#">
       <!-- SOFA ICON -->
       <svg class="h-4" alt="logo" viewBox="0 0 10240 10240">
-        <img class="brand__logo ml-1 lg:ml-5 h-16 w-20 2xl:w-24 2xl:h-20 -mt-3 p-2" src="images/logo.png" alt="Logo" />
-      </svg>
+        <img class="brand__logo ml-1 lg:ml-5 h-auto w-20 2xl:w-24 2xl:h-20 -mt-3 p-2" src="images/logo.png" alt="Logo" />
+      </svg> 
     </a>
     <div class="lg:hidden">
       <!-- burger icon -->
@@ -292,7 +302,6 @@
           project handovers within the proposed time frame.
         </div>
         <div>
-
           <button
             class="hero__btn bg-[#141213] w-fit px-5 py-4 font-bold text-sm md:text-lg text-white my-4 overflow-x-hidden">
             <a href="https://api.whatsapp.com/send?phone=919105360482" target="_blank">Book Free Consultation</a>
@@ -300,10 +309,8 @@
         </div>
       </div>
     </div>
-
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
@@ -327,7 +334,7 @@
         <div
           class="flex px-20 flex-col justify-center align-middle items-center lg:w-[100%] lg:mx-auto lg:flex-row md:py-3 lg:gap-8 xl:gap-[12rem] xl:w-[100%]">
           <div
-            class="-my-4 md:my-0 flex flex-col h-auto mx-auto lg:flex lg:items-center justify-center align-middle lg:basis-1/4"
+            class="-my-6 md:my-0 flex flex-col h-auto mx-auto lg:flex lg:items-center justify-center align-middle lg:basis-1/4"
             data-aos="flip-right" data-aos-duration="1500">
             <div>
               <a href="#">
@@ -371,7 +378,7 @@
             </div>
           </div>
           <div
-            class="my-8 md:my-0 flex flex-col bg-transparent mx-auto lg:mt-0 justify-center align-middle lg:basis-1/4"
+            class="mt-20 md:mt-0 flex flex-col bg-transparent mx-auto lg:mt-0 justify-center align-middle lg:basis-1/4"
             data-aos="flip-right" data-aos-duration="1500">
             <a href="#">
               <i class="fa-regular fa-circle-check text-6xl mx-auto drop-shadow-2xl mb-6 lg:mb-6 lg:mt-8 xl:mt-11"></i>
@@ -463,11 +470,10 @@
     </section>
 
     <!-- GALLERY SECTION -->
-    <section class="mt-[2rem] md:mt-[4rem] px-3">
+    <!-- <section class="mt-[2rem] md:mt-[4rem] px-3">
       <div data-aos-offset="100" data-aos="fade-in" class="container text-center mx-auto">
         <div class="img__box grid grid-cols-1 md:grid md:grid-cols-10 gap-3 md:gap-4">
           <img class="item p-0.5 object-cover rounded-lg md:col-span-3 md:h-full" src="gal/5.jfif" alt="Image 7" />
-
           <img class="item md:w-full md:h-full object-cover rounded-lg md:col-span-3 p-0.5" src="gal/3.jfif"
             alt="Image 3" />
           <img class="item md:col-span-2 lg:w-full rounded-lg p-0.5 lg:h-[100%] object-cover" src="gal/8.jfif"
@@ -487,6 +493,70 @@
             alt="Image 3" />
           <img class="item rounded-lg p-0.5 md:col-span-2" src="gal/15.jpg" alt="Image 4" />
           <img class="item p-0.5 object-cover rounded-lg md:col-span-3 md:h-full" src="gal/16.png" alt="Image 7" />
+        </div>
+      </div>
+    </section> -->
+    <section class="mt-8 md:mt-16 px-3">
+      <div data-aos-offset="100" data-aos="fade-in" class="container text-center mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+          <div class="item relative">
+            <img class="p-0.5 object-cover rounded-lg h-full w-full hover:brightness-50" src="gal/1.jpg"
+              alt="Image 7" />
+            <div class="overlay absolute inset-0 flex rounded-lg flex-col justify-center items-center text-white">
+              <p class="text-4xl font-bold">Modular Kitchen</p>
+            </div>
+          </div>
+          <div class="item relative">
+            <img class="p-0.5 object-cover rounded-lg h-full w-full hover:brightness-50" src="gal/2.jpg"
+              alt="Image 7" />
+            <div class="overlay absolute inset-0 flex rounded-lg flex-col justify-center items-center text-white">
+              <p class="text-4xl font-bold">Walking Wardrobe</p>
+            </div>
+          </div>
+          <div class="item relative">
+            <img class="p-0.5 object-cover rounded-lg h-full w-full hover:brightness-50" src="gal/3.jfif"
+              alt="Image 7" />
+            <div class="overlay absolute inset-0 flex rounded-lg flex-col justify-center items-center text-white">
+              <p class="text-4xl font-bold">TV Unit</p>
+            </div>
+          </div>
+          <div class="item relative">
+            <img class="p-0.5 object-cover rounded-lg h-full w-full hover:brightness-50" src="gal/15.jpg"
+              alt="Image 7" />
+            <div class="overlay absolute inset-0 flex rounded-lg flex-col justify-center items-center text-white">
+              <p class="text-4xl font-bold">Washroom</p>
+            </div>
+          </div>
+          <div class="item relative">
+            <img class="p-0.5 object-cover rounded-lg h-full w-full hover:brightness-50" src="gal/5.jfif"
+              alt="Image 7" />
+            <div class="overlay absolute inset-0 flex rounded-lg flex-col justify-center items-center text-white">
+              <p class="text-4xl font-bold">Living Room</p>
+            </div>
+          </div>
+          <div class="item relative">
+            <img class="p-0.5 object-cover rounded-lg h-full w-full hover:brightness-50" src="gal/13.jpg"
+              alt="Image 7" />
+            <div class="overlay absolute inset-0 flex rounded-lg flex-col justify-center items-center text-white">
+              <p class="text-4xl font-bold">Classical Bedroom</p>
+            </div>
+          </div>
+          <div class="item relative">
+            <img class="p-0.5 object-cover rounded-lg h-full w-full hover:brightness-50" src="gal/8.jfif"
+              alt="Image 7" />
+            <div class="overlay absolute inset-0 flex rounded-lg flex-col justify-center items-center text-white">
+              <p class="text-4xl font-bold">Bed Room</p>
+            </div>
+          </div>
+          <div class="item relative">
+            <img class="p-0.5 object-cover rounded-lg h-full w-full hover:brightness-50" src="gal/10.jfif"
+              alt="Image 7" />
+            <div class="overlay absolute inset-0 flex rounded-lg flex-col justify-center items-center text-white">
+              <p class="text-4xl font-bold">Bedroom TV Unit</p>
+            </div>
+          </div>
+          <!-- Repeat the structure for other images -->
+          <!-- ... -->
         </div>
       </div>
     </section>
