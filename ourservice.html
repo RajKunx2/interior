@@ -99,91 +99,52 @@
   </div>
 </div>
 
-  <nav class="relative flex justify-between items-center bg-[#e8e8e99c] z-50">
-    <a class="text-3xl font-bold leading-none" href="#">
-      <!-- SOFA ICON -->
-      <svg class="h-4" alt="logo" viewBox="0 0 10240 10240">
-        <img class="brand__logo ml-1 lg:ml-5 h-16 w-20 2xl:w-24 2xl:h-20 -mt-3 p-2" src="images/logo.png"
-          alt="Logo" />
+<nav class="relative flex justify-between items-center bg-transparent text-white z-10">
+  <a class="text-3xl font-bold leading-none" href="#">
+    <!-- SOFA ICON -->
+    <svg class="h-4" alt="logo" viewBox="0 0 10240 10240">
+      <img class="brand__logoss ml-1 lg:ml-5 h-16 w-20 2xl:w-24 2xl:h-20 -mt-3 p-2 rounded-xl mix-blend-multiply invert"
+        src="images/logo.png" alt="Logo" />
+    </svg>
+  </a>
+  <div class="lg:hidden">
+    <!-- burger icon -->
+    <button class="navbar-burger flex items-center text-gray-50 p-3 -ml-6">
+      <svg class="block w-5 mt-2 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <title>Mobile menu</title>
+        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
       </svg>
-    </a>
-    <div class="lg:hidden">
-      <!-- burger icon -->
-      <button class="navbar-burger flex items-center text-gray-600 p-3 -ml-6">
-        <svg class="block w-5 mt-2 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <title>Mobile menu</title>
-          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-        </svg>
-      </button>
-    </div>
-    <!-- LARGER VIEW -->
-    <ul
-      class="hidden w-screen text-lg absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 justify-center align-middle lg:flex lg:justify-end lg:w-auto lg:space-x-6 font-extrabold">
-      <li>
-        <a class="text-gray-800 hover:text-gray-500 nav__link" href="index.html">Home</a>
-      </li>
-      <li>
-        <a class="text-gray-800 hover:text-gray-500 nav__link" href="#">About Us</a>
-      </li>
-      <!-- Add Alpine.js -->
-      <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js"></script>
+    </button>
+  </div>
+  <!-- LARGER VIEW -->
+  <ul
+    class="hidden w-screen text-lg absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 justify-center align-middle lg:flex lg:justify-end lg:w-auto lg:space-x-6 font-extrabold">
+    <li>
+      <a class="font-bold nav__links" href="index.html">Home</a>
+    </li>
 
-      <!-- This is an example component -->
-      <div class="">
-        <div x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false" class="flex">
-          <button class="text-gray-800 hover:text-gray-500 nav__link" type="button" @click="open = !open">
-            Services
-            <!-- <svg class="w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-      </svg> -->
-          </button>
-          <svg class="w-4 mx-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
-          <!-- Dropdown menu -->
-          <div x-show="open" x-transition:enter="transition ease-out duration-100"
-            x-transition:enter-start="transform opacity-0 scale-95"
-            x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75"
-            x-transition:leave-start="transform opacity-100 scale-100"
-            x-transition:leave-end="transform opacity-0 scale-95"
-            class="absolute bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-8"
-            style="display: none">
-            <ul class="py-1" aria-labelledby="dropdown">
-              <li>
-                <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Architecture</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Interior</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Turnkey Projects</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Construction</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Consultancy</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Home Decor</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <li>
+      <a class="font-bold nav__links" href="#">About Us</a>
+    </li>
+    <!-- Add Alpine.js -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js"></script>
 
-      <li>
-        <a class="text-gray-800 hover:text-gray-500 nav__link" href="gallery.html">Recent Project</a>
-      </li>
-      <li>
-        <a class="text-gray-800 hover:text-gray-500 nav__link" href="contactUs.html">Blog</a>
-      </li>
-      <li>
-        <a class="text-gray-800 hover:text-gray-500 nav__link" href="contactUs.html">Contact Us</a>
-      </li>
-    </ul>
-  </nav>
+
+
+    <li>
+      <a class="font-bold nav__links" href="service.html">Services</a>
+    </li>
+    <li>
+      <a class="font-bold nav__links" href="gallery.html">Recent Project</a>
+    </li>
+    <li>
+      <a class="font-bold nav__links" href="contactUs.html">Blog</a>
+    </li>
+    <li>
+      <a class="font-bold nav__links" href="contactUs.html">Contact Us</a>
+    </li>
+  </ul>
+</nav>
 
   <div class="navbar-menu relative z-50 hidden">
     <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
